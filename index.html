@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+   <style>
+        header {
+            
+            padding: 0px;
+            font: size 16px;
+            border-radius: 5px;
+            font-style: italic;
+        
+        }
+
+        body {
+            background-color:#5DB;
+        
+           
+            
+            height: 100vh;
+            margin: 0;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 200px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid#ccc;
+            border-radius: 5px;
+
+
+        }
+
+        small {
+            color: red;
+            font-weight: bold;
+            background-color: yellow;
+            padding: 3px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .form-container button[type="Submit"] {
+            background: color #4caf50;
+            color: white;
+
+        }
+
+        .form-container button[type="Reset"] {
+            background-color: #4caf50;
+        }
+        Address{
+            width: 300px;
+            padding: 20px;
+            font-size: 20px;
+            border: 1px solid#ccc;
+            border-radius: 100px;
+            font-style:italic;
+
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr width="300" heighh="500">
+            
+                <header style="color:red">
+                    <h1>Covid Vaccine Registration</h1>
+                </header>
+            
+
+            <form>
+                <ol>
+
+                    <li>
+                        <h3> Enter your name:</h3>
+                    </li>
+
+
+                    <input type=" text" placeholder="First Name">
+
+
+
+                    <input type="text" placeholder="Last Name"><br>
+
+                    <li>
+                        <h3> Enter Your mail:</h3>
+                    </li>
+                    <input type="mail" placeholder="Email"><br>
+
+
+                    <li>
+                        <h3>Enter your mobile number:</h3>
+                    </li>
+                    <input type="text" id="phone" name="phone" pattern="\d{10}" maxlength="10" required
+                        placeholder="Enter mobile number"></li>
+                    <small>Enter exactly 10 digits(no spaces or special characters).</small><br>
+                    <li>
+                        <h3>Enter your date of birth:</h3>
+                    </li>
+
+                    <input type="date" id="dob" name="dob" required><br>
+
+
+                    <li> <label for="Gender">Choose your Gender:</label>
+                        <select id="gender" name="Gender" required>
+                            <option value="" disabled selected>Select a Gender</option>
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="others">others</option>
+                        </select>
+
+                    </li>
+                    <li>
+                        <h3>Adresss:</h3>
+                    </li>
+                    <input type="text" id="Adresss" name="Adresss" required placeholder="House No"><br>
+                    <input type="text" id="Adresss" name="Adresss" required placeholder="city/town/viillage"><br>
+                    <input type="text" id="Adresss" name="Adresss" required placeholder="mandal"><br>
+                    <input type="text" id="Adresss" name="Adresss" required placeholder="District"><br>
+                    <input type="text" id="Adresss" name="Adresss" required placeholder="State"><br>
+                    <input type="number" id="Adresss" name="Adresss" required placeholder="postal code"><br>
+                    <li><label for="Blood Group">Select your blood group:</label>
+                        <select id="Blood Group" name="Blood Group" required>
+                            <option value="" disabled selected>Select a Blood Group</option>
+                            <option value="A positive(A+)">A positive(A+)</option>
+                            <option value="A negative(A-)">A negative(A-)</option>
+                            <option value="B positive(B)">B positive(B+)</option>
+                            <option value="B negative(B-)">B negative(B-)</option>
+                            <option value="AB positive(AB+)">AB positive(AB+)</option>
+                            <option value="AB negative(AB)">AB negative(AB-)</option>
+                            <option value="O positive">O positive(O+)</option>
+                            <option value="O negative">O negative(O-)</option>
+                        </select><br>
+                    </li>
+                    <li><label for="Covid Dosage">Select your covid vacinated dosage: </label>
+                        <select id="Covid Dosage" name="Covid Dosage" required>
+                            <option value="" disabled selected>Select your covid vacinated dosage</option>
+                            <option value="1st dosage">1st dosage</option>
+                            <option value="2nd dosage">2nd dosage</option>
+                            <option value="3rd dosage">3rd dosage</option>
+                        </select><br>
+                    </li>
+                    <li><label for="Covid Attack">Have you attacked by covid:</label>
+                        <select id="Covid Attack" name="Covid Attack" required>
+                            <option value="" disabled selected>Have you attacked by covid</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select><br>
+
+                    </li>
+                    <li>
+                        <h3>Do you have faced any health issues?</h3>
+                        <input type="text" id="" name="" required placeholder="Enter here"><br>
+                    </li>
+
+                    <span>Note: if you any health issues please checkup:</span><br>
+                    <button type="button" id="SubmitBtn">Submit</button>
+                    <button type="button" id="SubmitBtn">Reset</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </form>
+            </ol>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>
